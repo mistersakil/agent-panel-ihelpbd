@@ -1,62 +1,10 @@
 /* Medium device media query */
 @media (max-width: 991px) {
-  .header {
-    padding: 0 5rem;
-  }
-  .logo {
-    font-size: 2rem;
-    font-weight: 500;
-  }
-  .navbar {
-    position: relative;
-
-    clip-path: inset();
-  }
-  .navbar a {
-    font-size: 1.6rem;
-    margin: 0 0.4rem;
-  }
-  .btnBooking {
-    font-size: 1.6rem;
-  }
 }
 
 /* Small device media query */
 
 @media (max-width: 767px) {
-  #menuBtn {
-    display: inline-block;
-  }
-  .header {
-    padding: 0 5rem;
-  }
-  .navbar {
-    position: absolute;
-    top: 100%;
-    background: black;
-    width: 100%;
-    left: 0;
-    right: 0;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-  .navbar.active {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  }
-  .navbar a {
-    display: block;
-    padding: 1rem;
-  }
-  .btnBooking {
-    font-size: 1.6rem;
-  }
 }
 @media (max-width: 350px) {
-  .header {
-    padding: 0 1rem;
-  }
-
-  .btnBooking {
-    font-size: 1.4rem;
-    padding: 0.5rem 1.2rem;
-  }
 }

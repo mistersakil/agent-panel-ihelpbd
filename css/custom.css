@@ -1,24 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900&display=swap");
-/* 
-:root {
-  --brandColor: rgba(10, 200, 200, 1);
-  --blackColor: rgba(10, 10, 10, 1);
-  --whiteColor: rgba(255, 255, 255, 1);
-  --greyColor: #aaaaaa;
-  --greenColor: #00ff00;
-  --redColor: #ff0000;
-  --blueColor: #0000ff;
-  --blackBg: rgba(25, 25, 25, 1);
-  --greyBg: rgba(100, 100, 100, 0.85);
-  --greenBg: #00ff00;
-  --redBg: #ff0000;
-  --blueBg: #0000ff;
-  --whiteBg: rgba(255, 255, 255, 1);
-  --mediumDeviceWidth: "991px";
-  --smallDeviceWidth: "767px";
-  --xSmallDeviceWidth: "500px";
-  --xxSmallDeviceWidth: "300px";
-} */
 
 * {
   font-family: "Roboto Flex", sans-serif;
@@ -30,6 +10,7 @@
   text-transform: capitalize;
   transition: all 0.2s linear;
   box-sizing: border-box;
+  list-style: none;
 }
 html {
   font-size: 10px;
@@ -38,25 +19,6 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 9rem;
 }
-/* scrollbar width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* scrollbar Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* scrollbar Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* scrollbar Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
 
 body {
   font-size: 1.6em;
@@ -64,67 +26,55 @@ body {
   color: var(--fontSecondary);
 }
 
-.header {
+#header {
   position: fixed;
-  height: 6rem;
-  background-color: var(--bgSecondary);
+  height: 12.5rem;
+  background-image: linear-gradient(var(--bgDark), var(--bgSecondary));
   width: 100%;
+}
+#header .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10rem;
-  color: var(--fontSecondary);
+  height: 5rem;
+  /* border-bottom: 0.1rem solid var(--borderPrimary); */
+  padding: 0rem 2rem 0 2rem;
 }
-
-.logo {
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: var(--fontPrimary);
-}
-.logo i {
-  margin-right: 0.5rem;
-  color: var(--brandColor);
-}
-
-.navbar a {
-  font-size: 1.8rem;
-  display: inline-block;
-  margin: 0 0.8rem;
-  color: var(--fontSecondary);
-}
-.navbar a:hover {
-  color: var(--brandColor);
-}
-/* Header navbar button group */
-.btnGroup {
+#header .top .profile {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 1rem;
 }
-#themeChangeIcon {
-  font-size: 2.4rem;
-  cursor: pointer;
-  height: 3rem;
+#header .top .profile .avatar {
   width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+}
+
+#header .top .callStatus {
+  height: 100%;
   display: flex;
   align-items: center;
+  gap: 2rem;
+  background-color: var(--bgSecondary);
+  padding: 0 2rem;
+  filter: drop-shadow(0px 4px 4px rgba(8, 1, 1, 0.25));
+  width: 70%;
   justify-content: center;
-}
-.btnBooking {
-  color: var(--fontPrimary);
-  display: block;
-  padding: 0.6rem 2rem;
-  border: 0.1rem solid var(--brandColor);
-  border-radius: 5rem;
-}
-
-.btnBooking:hover {
-  color: var(--fontDark);
-  background: var(--brandColor);
-}
-
-#menuBtn {
-  cursor: pointer;
-  display: none;
+  clip-path: polygon(
+    80% 6%,
+    70% 15%,
+    30% 15%,
+    15% 5%,
+    0% 25%,
+    10% 45%,
+    15% 75%,
+    25% 90%,
+    40% 95%,
+    60% 95%,
+    75% 91%,
+    85% 80%,
+    90% 45%,
+    100% 25%
+  );
 }

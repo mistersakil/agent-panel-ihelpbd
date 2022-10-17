@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tour-and-travel-agency-html-css-js-sass</title>
+    <title>Agent Panel Design</title>
     <!-- root style -->
     <style>
       :root {
@@ -45,27 +45,46 @@
   </head>
   <body>
     <!-- header section starts  -->
-    <header class="header">
-      <i class="fa-solid fa-bars" id="menuBtn"></i>
-      <a href="./" class="logo">
-        <i class="fas fa-paper-plane"></i>
-        brand
-      </a>
-      <!-- /.logo -->
-      <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-        <a href="#destination">destination</a>
-        <a href="#services">services</a>
-        <a href="#gallery">gallery</a>
-        <a href="#blogs">blogs</a>
-        <a href="#home">home</a>
-      </nav>
-      <!-- /.navbar -->
-      <div class="btnGroup">
-        <i class="fa-solid fa-moon" id="themeChangeIcon"></i>
-        <a href="#" class="btnBooking">book now</a>
-      </div>
+    <header id="header">
+      <section class="top">
+        <div class="profile">
+          <img src="./img/avatar.png" alt="avatar_agent_id" class="avatar" />
+          <span class="agentName">kiron</span>
+        </div>
+        <!-- /.profile -->
+
+        <ul class="callStatus">
+          <li class="status">
+            Status : <span class="count">acw (00:00:00)</span>
+          </li>
+          <li class="status">Login : <span class="count">00:00:00</span></li>
+          <li class="status">Calling : <span class="count">00:00:00</span></li>
+        </ul>
+        <!-- /.callStatus -->
+        <div class="logo">
+          <img src="./img/logo.png" alt="avatar_agent_id" class="img" />
+        </div>
+        <!-- /.logo -->
+      </section>
+      <!-- /.top -->
+      <section class="top">
+        <div class="profile">
+          <span class="agentName">iHelpBD</span>
+        </div>
+        <!-- /.profile -->
+
+        <ul class="callStatus">
+          <li class="status">
+            Status : <span class="count">acw (00:00:00)</span>
+          </li>
+          <li class="status">Login : <span class="count">00:00:00</span></li>
+          <li class="status">Calling : <span class="count">00:00:00</span></li>
+        </ul>
+        <!-- /.callStatus -->
+        <div class="logo">Inbound</div>
+        <!-- /.logo -->
+      </section>
+      <!-- /.top -->
     </header>
     <!-- header section ends -->
   </body>
