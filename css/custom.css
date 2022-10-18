@@ -17,7 +17,6 @@ html {
   font-weight: 300;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  scroll-padding-top: 9rem;
 }
 
 body {
@@ -28,53 +27,74 @@ body {
 
 #header {
   position: fixed;
-  height: 12.5rem;
+  height: 12rem;
   background-image: linear-gradient(var(--bgDark), var(--bgSecondary));
   width: 100%;
 }
-#header .top {
+#header .container {
   display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: space-between;
-  height: 5rem;
-  /* border-bottom: 0.1rem solid var(--borderPrimary); */
+  height: 100%;
+  border-bottom: 0.1rem solid var(--borderPrimary);
   padding: 0rem 2rem 0 2rem;
 }
-#header .top .profile {
+#header .container .box {
+  height: 100%;
+  flex-grow: 1;
+  flex-basis: 15%;
+}
+#header .container .box.left,
+#header .container .box.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#header .container .profile {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-#header .top .profile .avatar {
+#header .container .profile .avatar {
   width: 3rem;
   height: 3rem;
   object-fit: cover;
 }
+#header .container .left .skill,
+#header .container .right .brand {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--brandColor);
+}
 
-#header .top .callStatus {
+#header .container .box.widgets {
   height: 100%;
+  flex-basis: 65%;
+
   display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+
+  background-image: linear-gradient(var(--bgSecondary), var(--bgDark));
+  padding: 1rem 10%;
+
+  clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+  gap: 1rem;
+}
+
+#header .container .widgets .callStatus,
+#header .container .widgets .widgetIcons {
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
   gap: 2rem;
-  background-color: var(--bgSecondary);
-  padding: 0 2rem;
-  filter: drop-shadow(0px 4px 4px rgba(8, 1, 1, 0.25));
-  width: 70%;
-  justify-content: center;
-  clip-path: polygon(
-    80% 6%,
-    70% 15%,
-    30% 15%,
-    15% 5%,
-    0% 25%,
-    10% 45%,
-    15% 75%,
-    25% 90%,
-    40% 95%,
-    60% 95%,
-    75% 91%,
-    85% 80%,
-    90% 45%,
-    100% 25%
-  );
+  /* height: 50%; */
+  width: 100%;
+  flex-grow: 1;
+  /* background-color: red; */
+  overflow: hidden;
 }
