@@ -98,19 +98,23 @@ body {
   font-weight: 700;
 }
 .widgetIcons .iconItem {
-  flex-basis: 5%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.widgetIcons .iconItem .img {
-  width: 3rem;
-  height: 3rem;
+.widgetIcons .iconItem .icon {
   object-fit: cover;
   transform: scale(1);
   cursor: pointer;
+  font-size: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  text-align: center;
+  line-height: 3.5rem;
+  border-radius: 50%;
+  box-shadow: 0px -3px 2px 1px var(--borderPrimary);
 }
-.widgetIcons .iconItem:hover .img {
-  transform: scale(1.3);
+.widgetIcons .iconItem:hover .icon {
+  transform: scale(1.1);
 }
