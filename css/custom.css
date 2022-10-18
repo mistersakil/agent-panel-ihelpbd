@@ -34,11 +34,10 @@ body {
 #header .container {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  border-bottom: 0.1rem solid var(--borderPrimary);
+  box-shadow: 0px -5px 30px 15px var(--borderPrimary);
   padding: 0rem 2rem 0 2rem;
 }
 #header .container .box {
@@ -70,34 +69,48 @@ body {
   color: var(--brandColor);
 }
 
-#header .container .box.widgets {
+#header .container .box.center {
   height: 100%;
   flex-basis: 65%;
-
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
-  justify-content: center;
-
   background-image: linear-gradient(var(--bgSecondary), var(--bgDark));
-  padding: 1rem 10%;
-
+  padding: 0rem 5%;
   clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
   gap: 1rem;
 }
 
-#header .container .widgets .callStatus,
-#header .container .widgets .widgetIcons {
+#header .container .center .callStatus,
+#header .container .center .widgetIcons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 2rem;
-  /* height: 50%; */
+  height: 40%;
   width: 100%;
   flex-grow: 1;
-  /* background-color: red; */
   overflow: hidden;
 }
 
-#header .container .widgets .callStatus {
+.callStatus .status .count {
+  font-size: 1.8rem;
+  color: var(--brandColor);
+  font-weight: 700;
+}
+.widgetIcons .iconItem {
+  flex-basis: 5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.widgetIcons .iconItem .img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  transform: scale(1);
+  cursor: pointer;
+}
+.widgetIcons .iconItem:hover .img {
+  transform: scale(1.3);
 }
