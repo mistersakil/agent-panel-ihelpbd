@@ -17,8 +17,7 @@ const checkThemeIcon = function () {
 /** Check previous theme */
 let currentTheme = localStorage.getItem("theme")
   ? localStorage.getItem("theme")
-  : 12;
-console.log(currentTheme);
+  : false;
 
 if (currentTheme == "light") {
   body.classList.add("light");
