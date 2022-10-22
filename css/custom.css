@@ -142,21 +142,23 @@ body {
 
 /* Main contentArea styles */
 #contentArea {
-  display: none;
+  display: block;
   height: calc(100vh - 16rem);
   position: absolute;
   top: 12rem;
   width: 100%;
 }
 #headlineSection {
-  /* background-color: red; */
+  /* background-color: var(--brandColor); */
   overflow: hidden;
-  height: 4rem;
+  height: 6rem;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 2rem;
   padding: 0 1rem;
+  color: var(--fontPrimary);
+  box-shadow: 0 4px 10px 0px var(--borderSecondary);
 }
 #headlineSection .headlines {
   display: flex;

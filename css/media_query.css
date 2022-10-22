@@ -37,12 +37,24 @@
   }
   #header .widgetIcons {
     height: 0%;
-    /* clip-path: inset(0 0 100% 0); */
+    clip-path: inset(0 0 100% 0);
   }
 }
 /* Extra small device media query */
 @media (max-width: 450px) {
+  /* Header styles */
+  #header {
+    height: 9rem;
+  }
   #header .container .box.center {
     display: none;
+  }
+  /* Main contentArea styles */
+  #contentArea {
+    display: block;
+    height: calc(100vh - 12rem);
+    position: absolute;
+    top: 12rem;
+    width: 100%;
   }
 }
