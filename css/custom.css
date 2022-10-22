@@ -149,20 +149,24 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.footerIcons {
-  /* background-color: red; */
+#footer .copyright a {
+  color: var(--brandColor);
+}
+#footer .footerIcons {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
-.footerIcons .iconItem {
+#footer .footerIcons .iconItem {
   width: 3rem;
   height: 3rem;
   text-align: center;
-  line-height: 3.5rem;
-  /* background-color: red; */
+  cursor: pointer;
 }
 
-.footerIcons .iconItem .icon {
+#footer .footerIcons .iconItem .icon {
   font-size: inherit;
+  width: 100%;
+  height: 100%;
+  line-height: 3rem;
 }
