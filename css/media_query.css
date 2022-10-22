@@ -1,19 +1,20 @@
 /* Medium device media query */
 @media (max-width: 991px) {
-  #header .container .center .callStatus,
-  #header .container .center .widgetIcons {
+  #header .container .box.center {
+    gap: 0rem;
+  }
+  #header .callStatus,
+  #header .widgetIcons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
   }
-  .callStatus .status {
-    flex-basis: 30%;
-    flex-grow: 1;
+  #header .callStatus .status {
     text-align: center;
   }
-  .callStatus .status .count {
+  #header .callStatus .status .count {
     font-size: 1.4rem;
     font-weight: 700;
   }
@@ -22,6 +23,26 @@
 /* Small device media query */
 
 @media (max-width: 767px) {
+  #header .container .box.center {
+    gap: 0rem;
+    flex-basis: 35%;
+  }
+  #header .callStatus {
+    flex-direction: column;
+    height: 100%;
+    flex-wrap: nowrap;
+    align-items: unset;
+    align-content: center;
+    justify-content: center;
+  }
+  #header .widgetIcons {
+    height: 0%;
+    /* clip-path: inset(0 0 100% 0); */
+  }
 }
-@media (max-width: 350px) {
+/* Extra small device media query */
+@media (max-width: 450px) {
+  #header .container .box.center {
+    display: none;
+  }
 }

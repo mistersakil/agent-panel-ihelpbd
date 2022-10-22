@@ -23,8 +23,12 @@ body {
   font-size: 1.6em;
   background: var(--bgPrimary);
   color: var(--fontSecondary);
+  position: relative;
 }
-
+/* .hideOnMedium {
+  background-color: red;
+} */
+/* Header Styles  */
 #header {
   position: fixed;
   top: 0;
@@ -82,8 +86,8 @@ body {
   gap: 1rem;
 }
 
-#header .container .center .callStatus,
-#header .container .center .widgetIcons {
+#header .callStatus,
+#header .widgetIcons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -94,10 +98,15 @@ body {
   overflow: hidden;
 }
 
+/* callStatus style */
 #header .callStatus .status .count {
   font-size: 1.8rem;
   color: var(--brandColor);
   font-weight: 700;
+}
+/* widgetIcons style */
+#header .widgetIcons {
+  clip-path: inset(0 0 0 0);
 }
 #header .widgetIcons .iconItem {
   height: 100%;
@@ -130,6 +139,29 @@ body {
   height: 10rem;
   object-fit: contain;
 }
+
+/* Main contentArea styles */
+#contentArea {
+  display: none;
+  height: calc(100vh - 16rem);
+  position: absolute;
+  top: 12rem;
+  width: 100%;
+}
+#headlineSection {
+  /* background-color: red; */
+  overflow: hidden;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+#headlineSection .headlines {
+  display: flex;
+}
+/* Footer styles  */
 #footer {
   position: fixed;
   bottom: 0px;
