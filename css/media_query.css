@@ -39,6 +39,22 @@
     height: 0%;
     clip-path: inset(0 0 100% 0);
   }
+  /* headlineSection styles  */
+
+  #headlineSection .headlines {
+    height: 100%;
+    flex-basis: 75%;
+    flex-grow: 1;
+    gap: 0rem;
+    padding: 0 1rem;
+    overflow: hidden;
+    display: flex;
+    align-items: unset;
+    align-content: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 /* Extra small device media query */
 @media (max-width: 450px) {
@@ -56,5 +72,9 @@
     position: absolute;
     top: 12rem;
     width: 100%;
+  }
+  /* headlineSection styles  */
+  #headlineSection {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
 }

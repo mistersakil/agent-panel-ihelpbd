@@ -148,20 +148,50 @@ body {
   top: 12rem;
   width: 100%;
 }
+/* headlineSection area  */
 #headlineSection {
-  /* background-color: var(--brandColor); */
   overflow: hidden;
   height: 6rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 2rem;
   padding: 0 1rem;
   color: var(--fontPrimary);
   box-shadow: 0 4px 10px 0px var(--borderSecondary);
 }
+#headlineSection .headlineTitle {
+  flex-basis: 20%;
+  flex-grow: 1;
+  font-size: 1.6rem;
+  color: var(--fontSecondary);
+}
 #headlineSection .headlines {
+  height: 100%;
+  flex-basis: 75%;
+  flex-grow: 1;
+  gap: 2rem;
+  padding: 0 3rem;
+  overflow: hidden;
   display: flex;
+  align-items: center;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+#headlineSection .headlines .headline {
+  position: relative;
+}
+#headlineSection .headlines .headline::before {
+  content: "";
+  position: absolute;
+  left: -1.5rem;
+  top: 50%;
+  transform: translateY(-0.5rem);
+  height: 1rem;
+  width: 1rem;
+  background-color: var(--brandColor);
+  clip-path: polygon(29% 0, 100% 55%, 32% 100%, 0% 100%, 21% 51%, 0% 0%);
 }
 /* Footer styles  */
 #footer {
