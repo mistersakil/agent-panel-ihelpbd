@@ -147,10 +147,11 @@ body {
   position: absolute;
   top: 12rem;
   width: 100%;
-  /* background-color: red; */
 }
 /* headlineSection area  */
 #headlineSection {
+  position: fixed;
+  width: 100%;
   overflow: hidden;
   height: 6rem;
   display: flex;
@@ -162,14 +163,14 @@ body {
   box-shadow: 0 4px 10px 0px var(--borderSecondary);
 }
 #headlineSection .headlineTitle {
-  flex-basis: 20%;
+  flex-basis: 10%;
   flex-grow: 1;
   font-size: 1.6rem;
   color: var(--fontSecondary);
 }
 #headlineSection .headlines {
   height: 100%;
-  flex-basis: 75%;
+  flex-basis: 85%;
   flex-grow: 1;
   gap: 2.5rem;
   padding: 0 3rem;
@@ -192,6 +193,14 @@ body {
   width: 1rem;
   background-color: var(--brandColor);
   clip-path: polygon(29% 0, 100% 55%, 32% 100%, 0% 100%, 21% 51%, 0% 0%);
+}
+/* mainContent  styles */
+#mainContent {
+  position: absolute;
+  top: 6rem;
+  /* background-color: red; */
+  height: calc(100% - 6rem);
+  width: 100%;
 }
 /* Footer styles  */
 #footer {
