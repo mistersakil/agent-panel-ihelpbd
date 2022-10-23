@@ -100,7 +100,7 @@ body {
 
 /* callStatus style */
 #header .callStatus .status .count {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--brandColor);
   font-weight: 700;
 }
@@ -147,6 +147,7 @@ body {
   position: absolute;
   top: 12rem;
   width: 100%;
+  background-color: red;
 }
 /* headlineSection area  */
 #headlineSection {
@@ -170,12 +171,11 @@ body {
   height: 100%;
   flex-basis: 75%;
   flex-grow: 1;
-  gap: 2rem;
+  gap: 2.5rem;
   padding: 0 3rem;
   overflow: hidden;
   display: flex;
   align-items: center;
-  overflow: hidden;
   flex-wrap: nowrap;
   justify-content: flex-end;
 }

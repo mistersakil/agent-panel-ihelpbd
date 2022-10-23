@@ -42,16 +42,9 @@
   /* headlineSection styles  */
 
   #headlineSection .headlines {
-    height: 100%;
-    flex-basis: 75%;
-    flex-grow: 1;
     gap: 0rem;
     padding: 0 1rem;
-    overflow: hidden;
-    display: flex;
-    align-items: unset;
-    align-content: center;
-    overflow: hidden;
+    align-items: flex-start;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -67,10 +60,8 @@
   }
   /* Main contentArea styles */
   #contentArea {
-    display: block;
     height: calc(100vh - 12rem);
-    position: absolute;
-    top: 12rem;
+    top: 9rem;
     width: 100%;
   }
   /* headlineSection styles  */
