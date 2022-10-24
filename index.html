@@ -132,7 +132,7 @@
     <!-- header section ends -->
     <main id="contentArea">
       <section id="headlineSection">
-        <h2 class="headlineTitle">Important Notice</h2>
+        <h2 class="headlineTitle">Notice Board:</h2>
         <ul class="headlines">
           <li class="headline">
             খুলনায় বিএনপির বিভাগীয় সমাবেশ বিভাগীয় সমাবেশ শুরু 1
@@ -146,9 +146,35 @@
       </section>
       <!-- /.headlineSection -->
       <section id="mainContent">
-        <aside class="col agentView"></aside>
-        <aside class="col callLog"></aside>
-        <aside class="col dialpad"></aside>
+        <aside class="box agentBox">
+          <h3 class="title">List of online agents</h3>
+          <div style="overflow-x: auto" class="agents">
+            <table>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Status</th>
+              </tr>
+              <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>Login</td>
+              </tr>
+              <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>Break</td>
+              </tr>
+              <tr>
+                <td>Adam</td>
+                <td>Johnson</td>
+                <td>Pause</td>
+              </tr>
+            </table>
+          </div>
+        </aside>
+        <aside class="box logBox"></aside>
+        <aside class="box dialBox"></aside>
       </section>
     </main>
     <!-- /.contentArea -->

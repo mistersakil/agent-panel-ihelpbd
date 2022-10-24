@@ -58,7 +58,7 @@
   #header .container .box.center {
     display: none;
   }
-  /* Main contentArea styles */
+  /* contentArea styles */
   #contentArea {
     height: calc(100vh - 12rem);
     top: 9rem;
@@ -68,5 +68,10 @@
   #headlineSection {
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     display: none;
+  }
+  /* mainContent  styles */
+  #mainContent {
+    top: 0rem;
+    height: calc(100% - 0rem);
   }
 }
