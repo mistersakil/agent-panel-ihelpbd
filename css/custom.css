@@ -198,10 +198,64 @@ body {
 #mainContent {
   position: absolute;
   top: 6rem;
-  background-color: red;
+  background-color: var(--bgLight);
   height: calc(100% - 6rem);
   width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+  overflow: hidden;
 }
+#mainContent .box {
+  max-width: 20%;
+  height: 100%;
+  flex-grow: 1;
+  padding: 1rem;
+}
+#mainContent .agentBox {
+  /* background-color: blueviolet; */
+  /* border: 1px solid var(--borderSecondary); */
+  box-shadow: 0px 0px 5px -3px var(--borderSecondary);
+}
+#mainContent .logBox {
+  max-width: 60%;
+  background-color: blue;
+}
+#mainContent .dialBox {
+  background-color: brown;
+}
+
+/* Table common design  */
+.table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  width: 100%;
+  box-shadow: 0 0 20px 1px var(--bgDark);
+}
+.table thead tr {
+  background-color: var(--bgDark);
+  color: var(fontLight);
+  text-align: left;
+}
+.table th,
+.table td {
+  padding: 12px 15px;
+}
+.table tbody tr {
+  border-bottom: 1px solid var(--borderSecondary);
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: var(--bgSecondary);
+}
+.table tbody tr:nth-of-type(odd) {
+  background-color: var(--bgSecondary);
+}
+
 /* Footer styles  */
 #footer {
   position: fixed;
