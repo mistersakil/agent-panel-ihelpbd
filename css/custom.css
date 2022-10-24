@@ -165,7 +165,7 @@ body {
 #headlineSection .headlineTitle {
   flex-basis: 10%;
   flex-grow: 1;
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: var(--fontSecondary);
 }
 #headlineSection .headlines {
@@ -204,8 +204,8 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 2rem;
-  gap: 2rem;
+  padding: 0;
+  gap: 1rem;
   overflow: hidden;
 }
 #mainContent .box {
@@ -213,28 +213,46 @@ body {
   height: 100%;
   flex-grow: 1;
   padding: 1rem;
+  background-color: var(--bgSecondary);
 }
-#mainContent .agentBox {
-  /* background-color: blueviolet; */
+#mainContent .agentBox,
+#mainContent .dialBox {
   /* border: 1px solid var(--borderSecondary); */
   box-shadow: 0px 0px 5px -3px var(--borderSecondary);
+  clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
+}
+#mainContent .agentBox {
+  overflow: scroll;
 }
 #mainContent .logBox {
   max-width: 60%;
-  background-color: blue;
+  clip-path: polygon(0 1%, 100% 1%, 100% 99%, 0 99%);
+  overflow: scroll;
 }
 #mainContent .dialBox {
-  background-color: brown;
+  clip-path: polygon(0% 5%, 100% 0, 100% 100%, 0 95%);
+}
+#mainContent .box .boxTitle {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: 900;
+  color: var(--brandColor);
+}
+#mainContent .box .boxTitle::first-letter {
+  color: var(--fontLight);
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
 }
 
 /* Table common design  */
 .table {
   border-collapse: collapse;
-  margin: 25px 0;
+  margin: 1rem 0 2rem 0;
   font-size: 0.9em;
   font-family: sans-serif;
   width: 100%;
-  box-shadow: 0 0 20px 1px var(--bgDark);
+  /* box-shadow: 0 0 20px 1px var(--bgDark); */
 }
 .table thead tr {
   background-color: var(--bgDark);
