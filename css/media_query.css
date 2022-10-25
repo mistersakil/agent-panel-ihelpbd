@@ -39,8 +39,21 @@
     height: 0%;
     clip-path: inset(0 0 100% 0);
   }
-  /* headlineSection styles  */
+  /* mainContent styles  */
+  #mainContent {
+    padding: 0;
+    gap: 1rem;
+    overflow: hidden;
+  }
 
+  /* headlineSection styles  */
+  #headlineSection {
+    gap: 1rem;
+  }
+  #headlineSection .headlineTitle {
+    flex-basis: 22%;
+    font-size: 1.8rem;
+  }
   #headlineSection .headlines {
     gap: 0rem;
     padding: 0 1rem;
@@ -48,8 +61,25 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  /* mainContent  styles */
+  #mainContent .agentBox {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    max-width: 0%;
+    padding: 0;
+  }
+  #mainContent .logBox {
+    max-width: 60%;
+    clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
+    border-radius: 0;
+    padding-left: 0;
+    margin-left: -1rem;
+  }
+
+  #mainContent .dialBox {
+    max-width: 40%;
+  }
 }
-/* Extra small device media query */
+/* Extra small (450px) device media query */
 @media (max-width: 450px) {
   /* Header styles */
   #header {
@@ -73,5 +103,17 @@
   #mainContent {
     top: 0rem;
     height: calc(100% - 0rem);
+    gap: 0;
+  }
+  #mainContent .logBox {
+    max-width: 0%;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    padding: 0;
+    margin-left: 0rem;
+  }
+  #mainContent .dialBox {
+    max-width: 100%;
+    clip-path: polygon(50% 1%, 100% 0, 100% 100%, 50% 97%, 0 100%, 0 0);
+    padding: 0;
   }
 }

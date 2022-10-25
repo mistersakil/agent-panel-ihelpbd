@@ -217,17 +217,16 @@ body {
 }
 #mainContent .agentBox,
 #mainContent .dialBox {
-  /* border: 1px solid var(--borderSecondary); */
   box-shadow: 0px 0px 5px -3px var(--borderSecondary);
   clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
 }
 #mainContent .agentBox {
-  overflow: hidden;
+  overflow: scroll;
 }
 #mainContent .logBox {
   max-width: 60%;
   clip-path: polygon(0 1%, 100% 1%, 100% 99%, 0 99%);
-  overflow: hidden;
+  overflow: scroll;
   border-radius: 3rem;
 }
 #mainContent .dialBox {
@@ -246,7 +245,7 @@ body {
   font-size: 2rem;
   letter-spacing: 0.2rem;
 }
-#mainContent .box .boxTitle::after {
+/* #mainContent .box .boxTitle::after {
   content: "";
   height: 0.5rem;
   width: 2rem;
@@ -256,7 +255,7 @@ body {
   background: rgb(100, 100, 100);
   transform: translateX(-50%);
   clip-path: polygon(52% 100%, 0 0, 100% 0);
-}
+} */
 
 /* Table common design  */
 .table {
@@ -265,7 +264,6 @@ body {
   font-size: 0.8em;
   font-family: sans-serif;
   width: 100%;
-  /* box-shadow: 0 0 20px 1px var(--bgDark); */
 }
 .table thead tr {
   background-image: linear-gradient(
