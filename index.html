@@ -292,35 +292,64 @@
             Controls
           </h3>
 
-          <table class="table">
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Jill</td>
-                <td>Smith</td>
-                <td>Login</td>
-              </tr>
-              <tr>
-                <td>Eve</td>
-                <td>Jackson</td>
-                <td>Break</td>
-              </tr>
-              <tr>
-                <td>Adam</td>
-                <td>Johnson</td>
-                <td>Pause</td>
-              </tr>
-            </tbody>
-          </table>
-          <!-- /.table -->
+          <div class="actionButtons">
+            <button type="button" class="btn">
+              <i class="fa-solid fa-not-equal icon"></i>
+              <span class="btnText"> not ready </span>
+            </button>
+            <!-- /.button -->
+
+            <button type="button" class="btn">
+              <i class="fa-solid fa-phone-slash icon"></i>
+              <span class="btnText"> hangup </span>
+            </button>
+            <!-- /.button -->
+            <button type="button" class="btn">
+              <i class="fa-solid fa-pause icon"></i>
+              <span class="btnText"> hold </span>
+            </button>
+            <!-- /.button -->
+            <button type="button" class="btn">
+              <i class="fa-solid fa-phone-flip icon"></i>
+              <span class="btnText">dial </span>
+            </button>
+            <!-- /.button -->
+            <button type="button" class="btn">
+              <i class="fa-solid fa-right-left icon"></i>
+              <span class="btnText"> transfer </span>
+            </button>
+            <!-- /.button -->
+          </div>
+          <!-- /.actionButtons -->
+          <form class="inputBox">
+            <i class="fa-solid fa-trash icon clear"></i>
+            <input
+              type="number"
+              name="number"
+              class="number"
+              title="Type or paste mobile number"
+              placeholder="Mobile Number"
+            />
+            <i class="fa-solid fa-phone-flip icon call"></i>
+          </form>
+          <!-- /.inputBox -->
+          <ul class="dialer">
+            <li class="number">*</li>
+            <li class="number">#</li>
+            <li class="number">9</li>
+            <li class="number">8</li>
+            <li class="number">7</li>
+            <li class="number">6</li>
+            <li class="number">5</li>
+            <li class="number">4</li>
+            <li class="number">3</li>
+            <li class="number">2</li>
+            <li class="number">1</li>
+            <li class="number">0</li>
+          </ul>
+          <!-- /.dialer -->
         </aside>
-        <!-- /.box -->
+        <!-- /.box.dialBox -->
       </section>
       <!-- /.headlineSection -->
     </main>

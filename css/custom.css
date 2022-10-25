@@ -221,17 +221,15 @@ body {
   clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
 }
 #mainContent .agentBox {
-  overflow: scroll;
+  overflow: hidden;
 }
 #mainContent .logBox {
   max-width: 60%;
   clip-path: polygon(0 1%, 100% 1%, 100% 99%, 0 99%);
-  overflow: scroll;
+  overflow: hidden;
   border-radius: 3rem;
 }
-#mainContent .dialBox {
-  clip-path: polygon(0% 5%, 100% 0, 100% 100%, 0 95%);
-}
+
 #mainContent .box .boxTitle {
   font-size: 1.6rem;
   margin-top: 2rem;
@@ -255,6 +253,93 @@ body {
   transform: translateX(-50%);
   clip-path: polygon(52% 100%, 0 0, 100% 0);
 } */
+
+#mainContent .dialBox {
+  clip-path: polygon(0% 5%, 100% 0, 100% 100%, 0 95%);
+  /* background-color: red; */
+}
+#mainContent .dialBox .dialer {
+  /* background-color: blue; */
+  display: flex;
+  gap: 1rem;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  flex-direction: row-reverse;
+  margin: 1rem 0;
+}
+#mainContent .dialBox .dialer .number {
+  background-color: green;
+  background-image: linear-gradient(var(--bgSecondary), var(--bgDark));
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+#mainContent .dialBox .inputBox {
+  background-color: red;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#mainContent .dialBox .inputBox * {
+  height: 100%;
+  font-size: 1.6rem;
+  width: 15%;
+  flex-grow: 1;
+}
+#mainContent .dialBox .inputBox .number {
+  width: 65%;
+  text-indent: 0.5rem;
+  background-color: var(--bgPrimary);
+  color: var(--fontLight);
+  text-align: center;
+}
+#mainContent .dialBox .inputBox .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(var(--bgSecondary), var(--bgDark));
+  color: var(--brandColor);
+  cursor: pointer;
+}
+#mainContent .dialBox .actionButtons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  gap: 0.5rem;
+}
+#mainContent .dialBox .actionButtons .btn {
+  flex-basis: 15%;
+  flex-grow: 1;
+  height: 4rem;
+  position: relative;
+  background-image: linear-gradient(var(--bgSecondary), var(--bgDark));
+  color: var(--fontPrimary);
+  cursor: pointer;
+  font-size: 2rem;
+}
+#mainContent .dialBox .actionButtons .btn .btnText {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 1.2rem;
+  width: 6rem;
+  display: none;
+  text-align: left;
+}
+#mainContent .dialBox .actionButtons .btn:hover .btnText {
+  display: block;
+}
 
 /* Table common design  */
 .table {
