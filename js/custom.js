@@ -2,6 +2,7 @@
  * Theme change
  */
 const body = document.querySelector("body");
+const modalBtn = document.querySelector("#modalBtn");
 const themeChangeBtn = document.querySelector("#themeChangeBtn");
 
 const checkThemeIcon = function () {
@@ -40,4 +41,18 @@ themeChangeBtn.onclick = function (event) {
     body.classList.add("light");
     localStorage.setItem("theme", "light");
   }
+};
+
+modalBtn.onclick = function (event) {
+  console.log(this);
+  let modal = document.createElement("div");
+  modal.style.height = "300px";
+  modal.style.width = "500px";
+  modal.style.backgroundColor = "#a8a4a4";
+  modal.style.position = "fixed";
+  modal.style.left = "50%";
+  modal.style.top = "50%";
+  modal.style.transform = "translate(-50%, -50%)";
+  modal.style.border = "10px solid #bdb5b5";
+  body.append(modal);
 };
